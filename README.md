@@ -24,7 +24,20 @@ When you are in your terminal and inside typescript folder
 matti@LAPTOP-RE9S5TPO:~/typescript$ code .
 
 Copy & paste following code to tsconfig.json (replace existing code)
-
+```ruby 
+{
+  "compilerOptions": {
+    "target": "es2023",
+    "module": "commonjs",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  }
+}
+```
 {
   "compilerOptions": {
     "target": "es2023",
@@ -39,7 +52,7 @@ Copy & paste following code to tsconfig.json (replace existing code)
 }
 * Update package.json:
 Add the following scripts to automate the build and run processes:
-
+```ruby
 {
   "name": "typescript",
   "version": "1.0.0",
@@ -57,6 +70,9 @@ Add the following scripts to automate the build and run processes:
     "typescript": "^5.6.3"
   }
 }
+
+```
+
 
 <details>
   <summary> Create your source files in TypeScript: </summary>
